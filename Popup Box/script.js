@@ -15,17 +15,19 @@
 //    alert('User menekan tombol CANCEL');
 // }
 
+// Project boolean + perulangan sederhana
 alert('Selamat Datang');
+
 var lagi = true;
 
-while ( lagi ){
-    var nama = prompt('Masukan nama Anda : ');
+while ( lagi ) {
+    var nama = prompt('Masukan nama anda : ');
     alert('Halo ' + nama);
 
-    lagi = confirm('Mau coba lagi?');
+    var lagi = confirm('Mau mencoba lagi? ');
 }
 
-alert('Terima Kasih!');
+alert('Terima kasih!');
 
 
 
