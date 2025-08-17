@@ -73,11 +73,27 @@
 
 // 8. Sort
 // Pengurutan angka
-var angka = [2,10,22,6,8,4,3,5];
-console.log('Sebelum');
-console.log(angka.join(' | '));
-angka.sort(function(a,b){
-    return a - b;
-});
-console.log('Sesudah');
-console.log(angka.join(' | '));
+// var angka = [2,10,22,6,8,4,3,5];
+// console.log('Sebelum');
+// console.log(angka.join(' | '));
+// angka.sort(function(a,b){
+//     return a - b;
+// });
+// console.log('Sesudah');
+// console.log(angka.join(' | '));
+
+// 9. Filter and Find
+// Filter mencari nilai array dan mengembalikannya dalam bentuk array banyak nilai
+
+    // var angka = [2,10,22,6,8,4,3,5];
+    // var angka2 = angka.filter(function(e){
+    //     return e > 5;
+    // });
+    // console.log(angka2.join(' | '));
+
+// Find untuk mencari satu nilai array saja
+    var angka = [2,6,8,3,4,5,6,7];
+    var angka2 = angka.find(function(e){
+        return e > 7;
+    })
+    console.log(angka2);
