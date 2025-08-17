@@ -21,7 +21,6 @@
 
 // Method pada array
 
-var arr = ['Faiz', ' Muhammad', ' Ilham'];
 //1. Join
 // console.log(arr.join(' '));
 
@@ -32,6 +31,53 @@ var arr = ['Faiz', ' Muhammad', ' Ilham'];
 
 //3. Unshift dan shift
 // Pada elemen awal
-arr.unshift('Nama saya : ');
-arr.shift();
-console.log(arr.join(' '));
+// arr.unshift('Nama saya : ');
+// arr.shift();
+// console.log(arr.join(' '));
+
+// 4. Splice
+// splice(indexAwal, mauDiHapusBerapa, elemenBaru);
+// arr.splice(1, 2, 'Ganteng', 'struick');
+// console.log(arr.join(' '));
+
+// 5. Slice
+// slice(awal,akhir);
+// index yang dihapus bisa tengah dengan atau belakang
+// var arr = ['Faiz', ' Muhammad', ' Ilham', 'Lionel', 'Sensai'];
+// var arr2 = arr.slice(0, 5);
+// console.log(arr2.join(' '));
+
+// 6. ForEach
+// var angka = [1,2,3,4,5,6,7,8];
+
+// var nama = ['Faiz', 'Muhammad', 'Ilham', 'Hariry'];
+
+// var cetak = function(e){
+//     console.log(e);
+// }
+// angka.forEach(function(e){
+//     console.log(e);
+// });
+
+// nama.forEach(function(e, i){
+//     console.log('Mahasiswa ke-' + (i+1) + ' adalah ' + e)
+// });
+
+// 7. Map
+// Mengembalikan elemen array
+// var angka = [2,6,8,4,3,5];
+// var angka2 = angka.map(function(e){
+//     return e * 2;
+// });
+// console.log(angka2.join(' | '));
+
+// 8. Sort
+// Pengurutan angka
+var angka = [2,10,22,6,8,4,3,5];
+console.log('Sebelum');
+console.log(angka.join(' | '));
+angka.sort(function(a,b){
+    return a - b;
+});
+console.log('Sesudah');
+console.log(angka.join(' | '));
