@@ -43,7 +43,6 @@ var hapusPenumpang = function(namaPenumpang, penumpang){
                 penumpang[i] = undefined;
             } else if(i == penumpang.length - 1) {
                 console.log(namaPenumpang + ' tidak ada dalam angkot.');
-                return penumpang;
             }
         }
     }
